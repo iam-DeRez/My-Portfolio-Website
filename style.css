@@ -1,0 +1,1003 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: all .3s cubic-bezier(.38,1.15,.7,1.12);
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0F0F0F;
+}
+
+/*Header & Navigation*/
+.Hero_section{
+    min-height:100vh;
+    width:100%;
+    position:relative;
+    background-color: #0F0F0F;
+    
+    
+ }
+
+header{
+    position: fixed;
+    display:flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0F0F0F;
+   padding: 2% 8%;
+    top: 0; left: 0;
+    z-index: 1;
+}
+
+header a{
+   text-decoration: none;
+   color: #ffffff;
+   font-family: 'Inconsolata', monospace;
+   font-weight: bolder;
+   font-size: 30px;
+ }
+
+ nav{
+    margin-left: 400px;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    
+ }
+ 
+ 
+ header .navbar a{
+    font-family: 'Inconsolata', monospace;
+     font-size: 16px;
+     color: #8C8C8C;
+     list-style: none;
+     text-decoration: none;
+     font-weight: normal;
+ }
+
+
+ header .navbar a:hover{
+ 
+     color:#ffffff;
+ }
+ 
+ header nav a .active{
+    color: #ffffff;
+ }
+
+ #menu{
+     font-size: 3rem;
+     color:rgb(255, 255, 255);
+     cursor: pointer;
+     padding:.5rem 1rem;
+     border:.2rem solid rgba(0,0,0,.2);
+     border-radius: .5rem;
+     display: none;
+ }
+
+
+ /*Homepage*/
+
+ .hero{
+    margin: 0 8%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+
+ .hero h1{
+    margin-top: 280px;
+    font-size: 90px;
+    font-family: 'Inconsolata', monospace;
+    color: #ffffff;
+    text-align: center;
+
+ }
+
+ .hero p{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-family: 'Inconsolata', monospace;
+    color: #8C8C8C;
+    text-align: center;
+    width: 52%;
+    line-height: 30px;
+ }
+
+
+
+
+ .buttons{
+    padding-top: 50px;
+    display:flex;
+    flex-direction:row;
+    gap: 30px;
+}
+
+.buttons .button1 div a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Inconsolata', monospace;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+
+}
+
+.buttons .button2 div a{
+   text-decoration: none;
+   color: white;
+   font-family: 'Inconsolata', monospace;
+   border: solid 0.5px #ffffff;
+   padding: 19px 40px;
+   font-size: 16px;
+   font-weight: bold;
+   text-align: center;
+}
+
+
+ /*Projects Section*/
+
+ .projects{
+    min-height:200vh;
+    width:100%;
+    padding-bottom: 200px;
+    position:relative;
+    background-color: #000000;
+    }
+
+
+    .projects_container{
+        display: block;
+        margin: 0 8%;
+    }
+
+    .projects_container h1{
+        padding-top: 5%;
+        padding-bottom: 10%;
+        color: white;
+        font-family: 'Inconsolata', monospace;  
+    }
+
+    .case_studies{
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+    }
+
+    .case{
+         display: flex;
+        flex-direction: row;
+        gap: 100px;
+        align-items: center;
+    }
+
+    .case .description{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .case .description h1{
+        padding: 0;
+        color: #ffffff;
+        font-size: 32px;    
+
+    }
+
+    .case .description p{
+        color: #8C8C8C;
+        font-size: 18px;
+        font-family: 'Inconsolata', monospace; 
+        width: 70%;
+        line-height: 30px;
+
+        
+    }
+
+    .case .description a{
+        padding: 2px;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: 'Inconsolata', monospace; 
+        line-height: 30px; 
+        
+    }
+
+    .case .description a:hover{
+        text-decoration: underline;
+       
+    }
+
+
+    .case .img{
+        width: 60%;
+    }
+
+    .case .img img{
+        width: 100%;
+    }
+
+
+/*footer*/
+
+    .footer{
+        position:relative;
+        min-height: 35vh;
+        width: 100%;
+        background-color: #0F0F0F;
+        padding-top: 40px;
+
+    }
+    .whitespace{
+        margin: 3% 8%;
+        border-top:solid 0.1px #8C8C8C;
+    }
+
+    .footer_details{
+        margin: 0 8%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .footer_details .text p{
+        color: #8C8C8C;
+        font-size: 20px;
+        font-family: 'Inconsolata', monospace; 
+        line-height: 30px; 
+        text-align: center;
+    }
+
+    .socials{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+     /*About Page*/
+     .about_main{
+        margin: 10% 12%;
+       display: flex;
+       flex-direction: column;
+       gap: 40px;
+     }
+     .about_container{
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        gap: 150px;
+     }
+
+     .about_text{
+         display: flex;
+         flex-direction: column;
+         width: 60%;
+         
+     }
+
+     .about_text h1{
+        font-family: 'Inconsolata', monospace; 
+        color: white;
+        font-size:50px;
+        
+     }
+
+     .about_text p{
+        margin-top: 40px;
+        font-family: 'Inconsolata', monospace; 
+        color: #8C8C8C;
+        font-size:18px;
+        line-height: 38px;
+     }
+
+
+     .about_img{ 
+        width: 50%;  
+    }
+
+    .about_img img{ 
+        width: 100%;  
+    }
+
+    .second_text .text1 p{
+        font-family: 'Inconsolata', monospace; 
+        color: #8C8C8C;
+        font-size:18px;
+        line-height: 38px; 
+    }
+
+    .second_text .text2 p{
+        font-family: 'Inconsolata', monospace; 
+        color: #ffffff;
+        font-size:18px;
+        line-height: 38px; 
+        font-weight: bolder;
+    }
+
+
+      /*Contact Page*/
+      
+        .contact{
+        min-height:120vh;
+        width:100%;
+        position:relative;
+         background-color: #000000;
+    }
+
+    .container{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    .contact .container .header{
+        padding-top: 12%;
+        padding-bottom: 6%;
+    }
+    .contact .container .header h1{
+        font-size: 50px;
+        color: #ffffff;
+        font-family: 'Inconsolata', monospace; 
+    }
+
+    .flex_contact{
+        display: flex;
+        flex-direction: row;
+        gap: 250px;
+    }
+
+    .left_contact{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 40%;
+    }
+
+    .left_contact h2{
+        font-size: 25px;
+        color: #ffffff;
+        font-family: 'Inconsolata', monospace;
+    }
+
+    .left_contact p{
+        font-size: 18px;
+        margin-bottom: 30px;
+        color:#8C8C8C;
+        font-family: 'Inconsolata', monospace;
+        line-height: 38px;
+    }
+
+
+    .left_contact img{
+        width:20%;
+    }
+
+    
+    .form_name{
+        display: flex;
+        flex-direction: row;
+        gap:30px;
+    }
+    .formInput, .formInput2 span{
+        color: white;
+        font-family: 'Inconsolata', monospace;
+        font-size: 18px;
+        font-weight:700 ;
+    }
+
+    .formInput input{
+        margin-top: 15px;
+        width: 100% ;
+        padding: 15px 10px;
+        margin-bottom: 40px;
+        border: 0.1px solid rgb(204, 204, 204);
+        font-size: 15px;
+        color: rgb(255, 255, 255) ;
+        outline: none;
+        font-weight: normal;
+        font-family: 'Inconsolata', monospace;
+        background: transparent;
+      
+       }
+
+       .formInput2 textarea{
+        margin-top: 15px;
+        width: 100% ;
+        padding: 10px 10px;
+        margin-bottom: 20px;
+        border: 0.1px solid rgb(204, 204, 204);
+        font-size: 15px;
+        color: rgb(255, 255, 255) ;
+        outline: none;
+        font-weight: normal;
+        font-family: 'Inconsolata', monospace;
+        background: transparent;
+      
+       }
+        .formInput input[type = "submit"]{
+       background: rgb(255, 255, 255) ;
+       color: rgb(0, 0, 0);
+       padding: 15px 20px;
+       font-weight: 900;
+       font-size: 18px;
+       
+       }
+       
+
+
+
+
+
+
+     
+
+
+
+
+
+     /*Reveal on scroll Animation*/
+     .reveal {
+        position : relative ;
+        transform : translateY(150px) ;
+        opacity : 0 ;
+        transition : all 0.5s ease ;
+       }
+
+       .reveal.active {
+        transform : translate(0px) ;
+        opacity : 1 ;
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*Responsivesness for large screens*/
+ @media (max-width:1200px){
+    #menu{
+        display: block;
+        
+    }
+   
+    header{
+        padding:5% 8%;
+        height: 7%;
+    }
+
+
+    
+     nav{
+        margin-left: 0px;
+     }
+
+    header .navbar{
+        position: absolute;
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+        top:100%;
+        left:0;
+        color: rgb(255, 255, 255);
+        width:100%;
+        height:1000%;
+        background:#0F0F0F;
+        text-align: center;
+        padding:1rem 0;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        transform: scaleX(0);
+        transform-origin: right;
+        opacity: 0;
+        z-index: 0;
+        
+    }
+
+    header .navbar.nav-toggle{
+        transform: scaleY(1);
+        opacity: 5;
+    }
+
+    header .navbar a{
+        display: block;
+        padding:1.5rem 0;
+        font-size: 16px;
+    }
+
+    .hero h1{
+        margin-top: 240px;
+        font-size: 60px;
+        font-family: 'Inconsolata', monospace;
+        color: #ffffff;
+        text-align: center;
+        width: 100%;
+    
+     }
+
+     .hero p{
+         width: 100%;
+     }
+
+
+     /*About Page*/
+     .about_main{
+        margin: 0% 8%;
+        margin-top: 20%;
+       display: flex;
+       flex-direction: column;
+       gap: 40px;
+     }
+
+     
+     .about_container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: left;
+        gap: 60px;
+     }
+
+     .about_text{
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         
+     }
+
+     .about_text h1{
+        font-family: 'Inconsolata', monospace; 
+        color: white;
+        font-size:30px;
+        
+     }
+
+     .about_text p{
+        margin-top: 30px;
+        font-family: 'Inconsolata', monospace; 
+        color: #8C8C8C;
+        font-size:18px;
+        line-height: 30px;
+     }
+
+
+     .about_img{ 
+        width:80%;  
+    }
+
+    .about_img img{
+        width: 100%;
+    }
+
+    .second_text .text1 p{
+        font-family: 'Inconsolata', monospace; 
+        color: #8C8C8C;
+        font-size:18px;
+        line-height: 38px; 
+    }
+
+    .second_text .text2 p{
+        font-family: 'Inconsolata', monospace; 
+        color: #ffffff;
+        font-size:18px;
+        line-height: 38px; 
+        font-weight: bolder;
+    }
+
+
+    /*Contact Page*/
+    .flex_contact{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .left_contact img{
+        display: none;
+        width:20%;
+    }
+
+
+    .left_contact {
+        width: 100%;
+
+    }
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+ /*Responsivesness for small screens*/
+
+ /*Homepage*/
+ @media (max-width:450px){
+    
+    header{
+        position: fixed;
+        display:flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #0F0F0F;
+       padding: 12% 8%;
+        top: 0; left: 0;
+        z-index: 1;
+    }
+
+    .Hero_section a{
+        font-size: 20px;
+    
+    }
+
+
+    .hero h1{
+        margin-top: 130px;
+        font-size: 35px;
+        font-family: 'Inconsolata', monospace;
+        color: #ffffff;
+        text-align: center;
+    
+     }
+    
+     .hero p{
+        margin-top: 45px;
+        margin-bottom: 45px;
+        font-size: 18px;
+        font-family: 'Inconsolata', monospace;
+        color: #8C8C8C;
+        text-align: center;
+        width: 100%;
+        line-height: 30px;
+     }
+
+
+    
+    .buttons{
+        padding-top: 15px;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        padding-top: 10px;
+        gap: 40px;
+        width: 100%;
+    }
+
+    
+    .buttons .button1 div a{
+        color: rgb(20, 20, 20);
+        font-family: 'Inconsolata', monospace;
+        background-color: #ffffff;
+        padding: 15px 95px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;    
+        
+    }
+    
+    .buttons .button2 div a{
+       text-decoration: none;
+       color: white;
+       font-family: 'Inconsolata', monospace;
+       border: solid 0.5px #ffffff;
+       padding: 15px 70px;
+       font-size: 16px;
+       font-weight: bold;
+       text-align: center;
+       
+    }
+
+
+    /*Projects section for small screens*/
+
+    .projects_container h1{
+        padding-top: 20%;
+        padding-bottom: 20%;
+        color: white;
+        font-size: 25px;
+        font-family: 'Inconsolata', monospace;  
+    }
+
+    .case_studies{
+    gap: 80px;
+    
+    }
+
+
+    .case{
+        padding-top: 20px;
+        border-top: solid 1px rgb(194, 194, 194) ;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    }
+
+
+    .case .img{
+        width: 100%;
+    }
+
+    .case .img img{
+        width: 100%;
+    }
+
+    .case .description p{
+        color: #8C8C8C;
+        font-size: 18px;
+        font-family: 'Inconsolata', monospace; 
+        width: 100%;
+        line-height: 30px;
+
+        
+    }
+
+    /*projects section*/
+    .projects{
+        padding-bottom: 50px;
+    }
+
+    .footer{
+        padding-top: 30px;
+        min-height: 22vh;
+        padding-bottom: 40px;
+    }
+
+    /*footer*/
+    .footer_details{
+        margin: 0 8%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .footer_details .text p{
+        color: #8C8C8C;
+        font-size: 18px;
+        font-family: 'Inconsolata', monospace; 
+        line-height: 30px; 
+        text-align: center;
+    }
+
+    .socials{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+
+
+    /*About Page*/
+     .about_main{
+        margin: 0% 8%;
+        margin-top: 35%;
+       display: flex;
+       flex-direction: column;
+       gap: 40px;
+     }
+
+     .about_container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: left;
+        gap: 60px;
+     }
+
+     .about_text{
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         
+     }
+
+     .about_text h1{
+        font-family: 'Inconsolata', monospace; 
+        color: white;
+        font-size:30px;
+        
+     }
+
+     .about_text p{
+        margin-top: 30px;
+        font-family: 'Inconsolata', monospace; 
+        color: #8C8C8C;
+        font-size:18px;
+        line-height: 30px;
+     }
+
+
+     .about_img{ 
+        width:100%;  
+    }
+
+    .about_img img{
+        width: 100%;
+    }
+
+    .second_text .text1 p{
+        font-family: 'Inconsolata', monospace; 
+        color: #8C8C8C;
+        font-size:18px;
+        line-height: 38px; 
+    }
+
+    .second_text .text2 p{
+        font-family: 'Inconsolata', monospace; 
+        color: #ffffff;
+        font-size:18px;
+        line-height: 38px; 
+        font-weight: bolder;
+    }
+    
+     /*Contact Page*/
+     .form_name{
+        display: flex;
+        flex-direction: column;
+        gap:1px;
+    }
+    .formInput2 textarea{
+        margin-top: 1px;
+        
+    }
+
+    .formInput2 input{
+        margin-top: 1px;
+        padding: 1px 1px;
+    }
+
+    .contact .container .header{
+        padding-top: 45%;
+        padding-bottom: 6%;
+    }
+    .contact .container .header h1{
+        margin-bottom: 20px;
+        font-size: 40px;
+        color: #ffffff;
+        font-family: 'Inconsolata', monospace; 
+    }
+
+    .left_contact h2{
+        font-size: 24px;
+        color: #ffffff;
+        font-family: 'Inconsolata', monospace;
+        line-height: 30px;
+    }
+    .left_contact{
+        gap: 10px;
+    }
+
+    .left_contact p{
+        font-size: 18px;
+        margin-bottom: 10px;
+        color:#8C8C8C;
+        font-family: 'Inconsolata', monospace;
+        line-height: 38px;
+    }
+
+    .container{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    
+
+
+ }
+
+
+/*Homepage*/
+
+ @media (max-width:375px){
+    
+    header{
+        position: fixed;
+        display:flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #0F0F0F;
+       padding: 12% 8%;
+        top: 0; left: 0;
+        z-index: 1;
+    }
+
+    .Hero_section a{
+        font-size: 20px;
+    
+    }
+
+
+    .hero h1{
+        margin-top: 100px;
+        font-size: 35px;
+        font-family: 'Inconsolata', monospace;
+        color: #ffffff;
+        text-align: center;
+    
+     }
+
+     /*Contact Page*/
+     .form_name{
+        display: flex;
+        flex-direction: column;
+        gap:1px;
+    }
+
+    .formInput2 textarea{
+        margin-top: 1px;
+    }
+
+    .formInput2 input{
+        margin-top: 1px;
+    }
+
+
+
+
+     /*footer*/
+     .footer{
+        padding-top: 30px;
+        padding-bottom: 40px;
+        min-height: 22vh;
+    }
+    
+ }
+
+ @media (max-width:325px){
+
+    .Hero_section{
+        min-height:120vh;
+        width:100%;
+        position:relative;
+        background-color: #0F0F0F;
+    }
+    .hero h1{
+        margin-top: 110px;
+        font-size: 30px;
+        color: #ffffff;
+        text-align:center;
+ }
+
+ .hero p{
+    line-height: 25px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    font-size: 16px;
+ }
+}
